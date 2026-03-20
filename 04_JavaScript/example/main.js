@@ -1,8 +1,0 @@
-// !function(){return console.log("hi")}()
-// void function(){return console.log("hi")}()
-// +function(){return console.log("hi")}()
-// -function(){return console.log("hi")}()
-// ~function(){return console.log("hi")}()
-// *function(){return console.log("hi")}()
-// ^function(){return console.log("hi")}()
-// &function(){return console.log("hi")}()
