@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2장 요약 정리</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="http://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id = "app">
+            <h2>데이터를 있는 그대로 표시할 때</h2>
+            <p>{{myText}}</p>
+            <p v-text="myText"></p>
+            <br>
+            <h2>데이터를 HTML로 표시할 때</h2>
+            <p v-html="myText2"></p>
+            <br>
+            <h2>여러가지 데이터를 다룰 때</h2>
+            <p>{{ myNumber }} </p>
+            <p>{{ myText }} </p>
+            <p>{{ myBool }} </p>
+            <p>{{ myArray }} </p>
+            <p>{{ myObject }} </p>
+        </div>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    myText: 'Hello!!!', // html에 표시하는 이름과 뷰 안의 프로퍼티명 일치시킬 것
+                    myText2: '<h1>hello<h1>',
+                    myNumber: 12345,
+                    myBool: true,
+                    myArray:['다즐링', '얼그레이', '실론'],
+                    myObject:{name:'다즐링', price:600}
+                }
+            })
+        </script>
+    </body>
+</html>

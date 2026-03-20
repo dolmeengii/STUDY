@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>3장 실습</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="http://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <p><a href="http://naver.com">네이버로 연결</a></p>
+            <p><img :src="fileName"/>face1.png표시</p>
+            <p align="left">텍스트를 왼쪽 정렬</p>
+            <p align="right">텍스트를 오른쪽 정렬</p>
+            <p align="center">텍스트를 가운데 정렬</p>
+            <p style="color: red;">인라인 스타일로 글자색을 빨간색으로</p>
+            <p style="font-Size: 150%; color: red;">인라인 스타일로 글자크기를 150% 크게, 빨간색으로</p>
+            <p :style="myStyle">인라인 스타일로 글자크기를 150% 크게, 빨간색으로, 배경은 노란색으로</p>
+            <p class="blue-underline">blue-underline class 지정</p>
+            <p :class="[blue, strike]">blue-underline, strike-throug class 지정</p>
+        </div>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    fileName:'face1.png',
+                    myStyle: 'font-Size: 150%; color: red; background-Color: yellow;',
+                    blue: 'blue-underline',
+                    strike: 'strike-through'
+                }
+            })
+        </script>
+
+        <style>
+            .blue-underline{
+                text-decoration-line: underline;
+                color: blue;
+            }
+
+            .strike-through {
+                background-color: lightgray;
+            }
+
+        </style>
+        
+    </body>
+</html>

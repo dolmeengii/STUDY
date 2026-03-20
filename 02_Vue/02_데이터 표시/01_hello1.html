@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue.js 예제 2-1</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="http://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    </head>
+    <body>
+        <h2>데이터를 있는 그대로 출력하는 예제</h2>
+        <div id = "app">
+            <p>{{myText}}</p>
+        </div>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    myText: 'Hello!!!'
+                }
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 웹 페이지에 표시되는 제목 -->
+        <title>간단한 설명</title> 
+        <!-- CDN 에서 Vue.js 를 읽어 들인다는 뜻 -->
+        <script src="http://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    </head>
+
+    <body>
+        <!-- Vue.js 와 연결하는 요소 -->
+        <div id="app">
+            <p>{{ myText }}</p>
+        </div>
+
+        <script>
+            // 하나의 뷰 인스턴스
+            new Vue({
+                el: '#app', // 위의 div 태그와 연결 시킨다는 의미
+                data: {
+                    myText: 'Hello!!!'
+                }
+            })
+        </script>
+    </body>
+</html>

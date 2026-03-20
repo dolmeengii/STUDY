@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>4장 요약</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="http://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    </head>
+    <body>
+        <h2>텍스트를 입력할 때</h2>
+        <div id="app">
+            <input v-model.trim="myText">
+            <p> 앞뒤 공백을 제거 {{ myText }}</p>
+        </div>    
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    myText: ''
+                }
+            })
+        </script>
+        
+    </body>
+</html>

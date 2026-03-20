@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue.js 예제 2-9</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="http://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    </head>
+    <body>
+        <h2>오브젝트 내용을 확인하는 예제</h2>
+        <div id = "app">
+            {{$data }}
+            <hr>
+            <li v-for="(item, key) in $data">{{ key }} : {{ item }}</li>
+        </div>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    myText: 'Hello!!!',
+                    myNumber: 12345,
+                    myBool: true,
+                    myArray: [1, 2, 3, 4, 5]
+                }
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.m2e.Maven2LaunchConfigurationType">
+    <booleanAttribute key="M2_BATCH" value="false"/>
+    <stringAttribute key="M2_GOALS" value="-U archetype:generate"/>
+    <listAttribute key="M2_PROPERTIES">
+        <listEntry value="scalaVersion=2.7.7"/>
+        <listEntry value="liftVersion=2.0"/>
+        <listEntry value="archetypeGroupId=net.liftweb"/>
+        <listEntry value="archetypeArtifactId=lift-archetype-jpa-basic"/>
+        <listEntry value="archetypeVersion=2.0"/>
+        <listEntry value="groupId=jpa-basic"/>
+        <listEntry value="artifactId=ex1-hello-jpa"/>
+        <listEntry value="version=1.0.0"/>
+        <listEntry value="package=jpa_basic.ex1_hello_jpa"/>
+        <listEntry value="outputDirectory=/Users/jeonminjeong/Desktop/STUDY_JPA/workspace"/>
+    </listAttribute>
+    <booleanAttribute key="M2_SAVE_BEFORE_LAUNCH" value="false"/>
+    <booleanAttribute key="org.eclipse.debug.ui.private" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/var/folders/gp/_sc74v0x7p55gm1g6_4rpyfc0000gn/T/m2e-archetypeGenerator11136606255273840868"/>
+</launchConfiguration>

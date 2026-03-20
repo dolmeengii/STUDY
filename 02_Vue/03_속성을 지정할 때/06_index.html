@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>3장 정리</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="http://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h2>이미지 지정</h2>
+            <img v-bind:src="fileName"/>
+            <br>
+            <h2>링크 지정</h2>
+            <a v-bind:href="myURL"></a>
+            <br>
+            <h2>정렬</h2>
+            <p v-bind:align="myAlign"></p>
+        </div>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    fileName:'face1.png',
+                    myURL:'https://roadbook.co.kr/',
+                    myAlign:'center'
+                }
+            })
+        </script>
+
+        <style>
+            .strike-through {
+                text-decoration: line-through;
+                color: lightgray;
+            }
+
+            .dark{
+                background-color: gray;
+            }
+        </style>
+        
+    </body>
+</html>
