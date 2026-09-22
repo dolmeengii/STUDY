@@ -1,0 +1,16 @@
+# 설치된 의존성
+node_modules/
+
+# index.ts 컴파일 결과
+/index.js
+/index.js.map
+/index.d.ts
+/index.d.ts.map
+
+# 빌드 결과 및 TypeScript 캐시
+dist/
+*.tsbuildinfo
+
+# npm 로그 및 macOS 메타데이터
+npm-debug.log*
+.DS_Store
